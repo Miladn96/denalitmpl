@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato,
+  sans-serif;
+  background-color: #fff;
+}
+body {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+header {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0px 1px 3px rgb(192, 191, 191);
+}
+
+main{
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+
+.bcolor{
+    background-color: rgb(199, 136, 54);
+}
