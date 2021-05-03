@@ -1,0 +1,90 @@
+/** Flex Box  **/
+.contianer {
+    width: 61.2%;
+}
+
+.flex {
+    display: flex;
+}
+.f-center {
+    justify-content: center;
+}
+.f-left{
+    justify-content: flex-start;
+}
+.f-right {
+    justify-content: flex-end;
+}
+
+/** Element size in page **/
+.f-10 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.f-9 {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.f-8 {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.f-7 {
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.f-6 {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.f-5 {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.f-4 {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.f-3 {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.f-2 {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.f-1 {
+    width: 10%;
+    box-sizing: border-box;
+}
+
+/** Header Links **/
+.h-link {
+    color: #aaa;
+    padding: 15px 0px;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.h-link:hover {
+    color: #333;
+}
+
+.h-hom {
+    color: #333;
+}
+
+.logo-link {
+   color: #333;
+   margin-top: 11px;
+   font-size: 24px;
+}
