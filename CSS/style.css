@@ -6,6 +6,7 @@
   font-family: Lato,
   sans-serif;
   background-color: #fff;
+  box-sizing: border-box;
 }
 body {
   color: #333;
@@ -20,18 +21,32 @@ ul {
 header {
   background-color: #fff;
   padding: 15px 0;
-  box-shadow: 0px 1px 3px rgb(192, 191, 191);
+  box-shadow: 0px 1px 3px rgb(191, 191, 191);
+  z-index: 1;
 }
 
-main{
+nav , nav div, nav div main{
   background-color: #f0f0f0;
 }
-
-
-
-
-
-
-.bcolor{
-    background-color: rgb(199, 136, 54);
+nav div {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+nav main {
+  margin-left: 20px;
+}
+nav aside {
+  margin-right: 10px;
+}
+nav div main section , nav div aside {
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 3px rgb(191, 191, 191);
+  border-radius: 7px;
+  padding: 20px;
+}
+nav div main section article {
+  margin-left: 20px;
+}
+nav div main section article h3{
+  font-size: 20px;
 }
