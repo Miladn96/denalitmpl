@@ -13,3 +13,13 @@ xhttp.onreadystatechange = function () {
   }
 };
 xhttp.send();
+
+var menu=document.getElementById("menu");
+function showMenu(){
+  console.log("showMenu");
+  document.body.addEventListener("click",closeMenu,true);
+  menu.classList.add(".xsm-menu-show");
+}
+function closeMenu(){
+  menu.classList.remove("xsm-menu-show");
+}

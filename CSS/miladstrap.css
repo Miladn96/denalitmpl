@@ -3,35 +3,6 @@
     width: 61.2%;
 }
 
-.flex {
-    display: flex;
-}
-.f-center {
-    justify-content: center;
-    align-items: center;
-}
-.f-start {
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.f-left{
-    justify-content: flex-start;
-}
-.f-right {
-    justify-content: flex-end;
-}
-.f-column{
-    flex-direction: column;
-}
-.f-row{
-    flex-direction: row;
-}
-
-/** Font Size **/
-.font-size-small{
-    font-size: 14px;
-}
-
 /** Element size in page **/
 .f-10 {
     width: 100%;
@@ -93,6 +64,48 @@
     box-sizing: border-box;
 }
 
+/** Flex Box  **/
+.flex {
+    display: flex;
+}
+
+.f-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.f-start {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.f-left {
+    justify-content: flex-start;
+}
+
+.f-right {
+    justify-content: flex-end;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.f-rrow {
+    flex-direction: row-reverse;
+}
+
+/** Font Size **/
+.font-size-small {
+    font-size: 14px;
+}
+
+
+
 /** Links **/
 .link {
     color: #aaa;
@@ -110,11 +123,12 @@
 }
 
 .logo-link {
-   color: #333;
-   margin-top: 11px;
-   font-size: 24px;
-} 
-.header1{
+    color: #333;
+    margin-top: 11px;
+    font-size: 24px;
+}
+
+.header1 {
     font-size: 33px;
     font-weight: 400;
 }
@@ -134,50 +148,57 @@
 
 
 /** Tags and pragraph style **/
-.tag{
+.tag {
     color: #aaa;
     margin: 15px 0;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.prag{
+
+.prag {
     font-size: 14px;
     color: #aaa;
     letter-spacing: 1px;
 }
+
 .prag-black {
     color: #333;
 }
 
 /** Make Padding and Margin **/
-.padding-20{
+.padding-20 {
     padding: 20px;
 }
-.paddingBt-20{
+
+.paddingBt-20 {
     padding-bottom: 20px;
 }
-.paddingTopBt-10{
+
+.paddingTopBt-10 {
     padding: 10px 0;
 }
-.marginTop-25{
+
+.marginTop-25 {
     margin-top: 25px;
 }
-.marginBt-20{
+
+.marginBt-20 {
     margin-bottom: 20px;
 }
 
 /** Profile Picture **/
-.profile{
+.profile {
     width: 70%;
     margin: 0 auto;
 }
-.p-circle{
+
+.p-circle {
     border-radius: 50%;
 }
 
 /** Horizontal Line **/
-.gray-rule{
+.gray-rule {
     background-color: rgb(216, 215, 215);
     height: 1.05px;
     width: 60%;
@@ -186,19 +207,354 @@
 }
 
 /** Social Media Logos  **/
-.l-logo-parent{
+.l-logo-parent {
     justify-content: space-between;
 }
-.l-logo-parent a{
+
+.l-logo-parent a {
     display: inline;
     margin-bottom: 10px;
 }
+
 .l-logo {
     margin-top: 10px;
 }
 
 /** fixed link **/
-.fixed{
+.fixed {
     position: fixed;
     z-index: 1000;
+}
+
+
+
+.xsm {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1050px) and (min-width : 840px) {
+
+    /** Flex Box  **/
+    .container {
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (max-width : 840px) and (min-width : 710px) {
+    .f-fab-center {
+        align-items: center;
+    }
+
+    nav main {
+        margin-left: 0px;
+    }
+
+    .profile {
+        width: 30%;
+    }
+
+    .padding-20 {
+        padding: 20px 100px;
+    }
+
+    /** Flex Box  **/
+    .container {
+        width: 95%;
+    }
+
+    /** Element size in page **/
+    .f-fab-10 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-105 {
+        width: 105%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-9 {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-95 {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-8 {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-7-5 {
+        width: 75%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-7 {
+        width: 70%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-6 {
+        width: 60%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-5 {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-4 {
+        width: 40%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-3 {
+        width: 30%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-2-5 {
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-2 {
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-1 {
+        width: 10%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-colum {
+        flex-direction: column;
+    }
+
+    /** Make Padding and Margin **/
+    .fab-padding-20 {
+        padding: 20px;
+    }
+
+    .fab-paddingBt-20 {
+        padding-bottom: 20px;
+    }
+
+    .fab-paddingTopBt-10 {
+        padding: 10px 0;
+    }
+
+    .fab-marginTop-25 {
+        margin-top: 25px;
+    }
+
+    .fab-marginBt-20 {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width : 710px) {
+    .blog-image {
+        display: block;
+        height: 210px;
+        width: 70%;
+        border-radius: 3px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin-bottom: 20px;
+    }
+
+    .f-sm-colum {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-fab-center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav main {
+        margin-left: 0px;
+    }
+
+    .profile {
+        width: 200px;
+    }
+
+    .padding-20 {
+        padding: 20px 100px;
+    }
+
+    /** Flex Box  **/
+    .container {
+        width: 95%;
+    }
+
+    /** Element size in page **/
+    .f-fab-10 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-105 {
+        width: 105%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-9 {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-95 {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-8 {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-7-5 {
+        width: 75%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-7 {
+        width: 70%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-6 {
+        width: 60%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-5 {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-4 {
+        width: 40%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-3 {
+        width: 30%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-2-5 {
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-2 {
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-1 {
+        width: 10%;
+        box-sizing: border-box;
+    }
+
+    .f-fab-colum {
+        flex-direction: column;
+    }
+
+    /** Make Padding and Margin **/
+    .fab-padding-20 {
+        padding: 20px;
+    }
+
+    .fab-paddingBt-20 {
+        padding-bottom: 20px;
+    }
+
+    .fab-paddingTopBt-10 {
+        padding: 10px 0;
+    }
+
+    .fab-marginTop-25 {
+        margin-top: 25px;
+    }
+
+    .fab-marginBt-20 {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .profile {
+        width: 120px;
+    }
+
+    .blog-image {
+        width: 90%;
+    }
+
+    .f-xsm-9 {
+        width: 90%;
+    }
+
+    .f-fab-9 {
+        padding: 20px 20px;
+    }
+
+    .biggerThan-xsm {
+        display: none;
+    }
+
+    .xsm {
+        display: initial;
+        position: relative;
+        top: 0px;
+        right: 30px;
+    }
+
+    .xsm i:hover {
+        color: #aaa;
+    }
+
+    .xsm:active {
+        display: none;
+    }
+
+    .xsm-menu {
+        display: none;
+    }
+
+    .xsm-menu-show {
+        display: initial;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        width: 150px;
+        height: 200px;
+        box-shadow: 0px 0px 3px #aaa;
+        background-color: white;
+        border-radius: 5px;
+        border: 2px solid #d0d0d0;
+        z-index: 100;
+    }
 }

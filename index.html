@@ -12,14 +12,14 @@
 </head>
 
 <body class="flex f-center f-column">
-    <a href="#" class="flex fixed">
+    <!-- <a href="#" class="flex fixed">
         <img src="img/logo/webflow-badge-icon.svg" alt="Webflow badge" style="padding: 10px;">
         <img src="img/logo/webflow-badge-text.svg" alt="Webflow badge" style="height: fit-content; position: relative;top: 12px;">
-    </a>
+    </a> -->
     <header class="flex f-center f-10">
         <div class="container flex">
             <a href="#" class="f-7 logo-link">Denali</a>
-            <ul class="flex f-3 f-right">
+            <ul class="flex f-3 f-right biggerThan-xsm">
                 <a href="#" class="link h-link">
                     <li>Home</li>
                 </a>
@@ -30,12 +30,123 @@
                     <li>Contact</li>
                 </a>
             </ul>
+            
         </div>
+        <div class="xsm" onclick="showMenu()"><i class="fa fa-bars" ></i></div>
+        <div class="xsm xsm-menu" id="menu">
+            <ul style="padding: 30px;">
+                <a href="#" class="link h-link">
+                    <li>Home</li>
+                </a>
+                <a href="#" class="link h-link">
+                    <li>About</li>
+                </a>
+                <a href="#" class="link h-link">
+                    <li>Contact</li>
+                </a>
+            </ul></div>
     </header>
 
-    <nav class="flex f-center f-10">
-        <div class="flex f-start container">
-            <aside class="flex f-2-5 padding-20 f-column">
+    <nav class="flex f-center f-10 f-fab-105">
+        <div class="flex f-start container f-rrow f-fab-colum f-fab-center">
+            <main class="flex f-7-5 f-fab-95 f-column">
+                <section>
+                    <h1 class="header1">All Posts</h1>
+                </section>
+
+                <section class="flex f-sm-colum">
+                    <a href="#" class="blog-image f-3" style="
+                background-image: url('../img/articles-photo/section-01.jpg');
+              "></a>
+                    <article class="f-7 f-xsm-9">
+                        <h3>
+                            Wherever far wow thus a squirrel raccoon jeez jaguar this from
+                            along
+                        </h3>
+                        <p class="tag"></p>
+                        <p class="prag">
+                            The copy warned the Little Blind Text, that where it came from
+                            it would have been rewritten a thousand times and everything
+                            that was left from its origin would be the word "and" and the
+                            Little Blind <a href="#" class="link">Read more...</a>
+                        </p>
+                    </article>
+                </section>
+
+                <section class="flex f-sm-colum">
+                    <a href="#" class="blog-image f-3" style="
+                background-image: url('../img/articles-photo/section-02.jpg');
+              "></a>
+                    <article class="f-7 f-xsm-9">
+                        <h3>Coffee sugar, chicory seasonal espresso barista americano</h3>
+                        <p class="tag"></p>
+                        <p class="prag">
+                            Arista, percolator, cream, aromatic, fair trade, breve body
+                            instant lungo blue mountain cappuccino. Americano aroma mug
+                            espresso latte crema milk redeye acerbic. Galão robusta instant,
+                            decaffeinated, so fair trade wings.
+                            <a href="#" class="link">Read more...</a>
+                        </p>
+                    </article>
+                </section>
+
+                <section class="flex f-sm-colum">
+                    <a href="#" class="blog-image f-3" style="
+                background-image: url('../img/articles-photo/section-03.jpg');
+              "></a>
+                    <article class="f-7 f-xsm-9">
+                        <h3>
+                            According a funnily until pre-set or arrogant well cheerful
+                        </h3>
+                        <p class="tag"></p>
+                        <p class="prag">
+                            Single shot cultivar beans as chicory caffeine. Medium brewed,
+                            milk extra that froth pumpkin spice mocha. Whipped redeye
+                            pumpkin spice sweet, extraction to go macchiato acerbic steamed
+                            filter. Robusta grounds decaffeinated.
+                            <a href="#" class="link">Read more...</a>
+                        </p>
+                    </article>
+                </section>
+
+                <section class="flex f-sm-colum">
+                    <a href="#" class="blog-image f-3" style="
+                background-image: url('../img/articles-photo/section-04.jpg');
+              "></a>
+                    <article class="f-7 f-xsm-9">
+                        <h3>Overlaid the jeepers uselessly much excluding</h3>
+                        <p class="tag"></p>
+                        <p class="prag">
+                            Far far away, behind the word mountains, far from the countries
+                            Vokalia and Consonantia, there live the blind texts. Separated
+                            they live in Bookmarksgrove right at the coast of the Semantics,
+                            a large language ocean.
+                            <a href="#" class="link">Read more...</a>
+                        </p>
+                    </article>
+                </section>
+
+                <section class="flex f-sm-colum">
+                    <a href="#" class="blog-image f-3" style="
+                background-image: url('../img/articles-photo/section-05.jpg');
+              "></a>
+                    <article class="f-7 f-xsm-9">
+                        <h3>
+                            Coffee variety macchiato, as organic ut variety caffeine
+                            americano
+                        </h3>
+                        <p class="tag"></p>
+                        <p class="prag">
+                            Saucer, crema carajillo, bar, mocha medium, latte cappuccino and
+                            espresso acerbic to go. Coffee, irish foam turkish coffee blue
+                            mountain seasonal. Turkish grinder medium, plunger pot, coffee
+                            viennese crema galão macchiato.
+                            <a href="#" class="link">Read more...</a>
+                        </p>
+                    </article>
+                </section>
+            </main>
+            <aside class="flex f-2-5 f-fab-9 padding-20 f-column">
                 <img src="img/Profile-photo/profile-picture.jpg" alt="Denali" class="profile p-circle" />
                 <p class="prag prag-black marginTop-25 paddingBt-20">
                     Denali is a simple responsive blog template. Easily add new posts
@@ -55,7 +166,7 @@
                     </a>
                 </section>
                     <div class="gray-rule"></div>
-                <section class="flex f-7 l-logo-parent">
+                <section class="flex f-7 f-fab-5 l-logo-parent">
                     <a href="#">
                         <i class="fa fa-facebook-square l-logo link" style="font-size: 25px;"></i>
                     </a>
@@ -72,104 +183,6 @@
                     </section>
                     <p class="prag" style="font-size: 10px;">BUILT WITH WEBFLOW</p>
             </aside>
-
-            <main class="flex f-7-5 f-column">
-                <section class="">
-                    <h1 class="header1">All Posts</h1>
-                </section>
-
-                <section class="flex">
-                    <a href="#" class="blog-image f-3" style="
-                background-image: url('../img/articles-photo/section-01.jpg');
-              "></a>
-                    <article class="f-7">
-                        <h3>
-                            Wherever far wow thus a squirrel raccoon jeez jaguar this from
-                            along
-                        </h3>
-                        <p class="tag"></p>
-                        <p class="prag">
-                            The copy warned the Little Blind Text, that where it came from
-                            it would have been rewritten a thousand times and everything
-                            that was left from its origin would be the word "and" and the
-                            Little Blind <a href="#" class="link">Read more...</a>
-                        </p>
-                    </article>
-                </section>
-
-                <section class="flex">
-                    <a href="#" class="blog-image f-3" style="
-                background-image: url('../img/articles-photo/section-02.jpg');
-              "></a>
-                    <article class="f-7">
-                        <h3>Coffee sugar, chicory seasonal espresso barista americano</h3>
-                        <p class="tag"></p>
-                        <p class="prag">
-                            Arista, percolator, cream, aromatic, fair trade, breve body
-                            instant lungo blue mountain cappuccino. Americano aroma mug
-                            espresso latte crema milk redeye acerbic. Galão robusta instant,
-                            decaffeinated, so fair trade wings.
-                            <a href="#" class="link">Read more...</a>
-                        </p>
-                    </article>
-                </section>
-
-                <section class="flex">
-                    <a href="#" class="blog-image f-3" style="
-                background-image: url('../img/articles-photo/section-03.jpg');
-              "></a>
-                    <article class="f-7">
-                        <h3>
-                            According a funnily until pre-set or arrogant well cheerful
-                        </h3>
-                        <p class="tag"></p>
-                        <p class="prag">
-                            Single shot cultivar beans as chicory caffeine. Medium brewed,
-                            milk extra that froth pumpkin spice mocha. Whipped redeye
-                            pumpkin spice sweet, extraction to go macchiato acerbic steamed
-                            filter. Robusta grounds decaffeinated.
-                            <a href="#" class="link">Read more...</a>
-                        </p>
-                    </article>
-                </section>
-
-                <section class="flex">
-                    <a href="#" class="blog-image f-3" style="
-                background-image: url('../img/articles-photo/section-04.jpg');
-              "></a>
-                    <article class="f-7">
-                        <h3>Overlaid the jeepers uselessly much excluding</h3>
-                        <p class="tag"></p>
-                        <p class="prag">
-                            Far far away, behind the word mountains, far from the countries
-                            Vokalia and Consonantia, there live the blind texts. Separated
-                            they live in Bookmarksgrove right at the coast of the Semantics,
-                            a large language ocean.
-                            <a href="#" class="link">Read more...</a>
-                        </p>
-                    </article>
-                </section>
-
-                <section class="flex">
-                    <a href="#" class="blog-image f-3" style="
-                background-image: url('../img/articles-photo/section-05.jpg');
-              "></a>
-                    <article class="f-7">
-                        <h3>
-                            Coffee variety macchiato, as organic ut variety caffeine
-                            americano
-                        </h3>
-                        <p class="tag"></p>
-                        <p class="prag">
-                            Saucer, crema carajillo, bar, mocha medium, latte cappuccino and
-                            espresso acerbic to go. Coffee, irish foam turkish coffee blue
-                            mountain seasonal. Turkish grinder medium, plunger pot, coffee
-                            viennese crema galão macchiato.
-                            <a href="#" class="link">Read more...</a>
-                        </p>
-                    </article>
-                </section>
-            </main>
         </div>
     </nav>
 
