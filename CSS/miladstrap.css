@@ -23,6 +23,14 @@
 .f-column{
     flex-direction: column;
 }
+.f-row{
+    flex-direction: row;
+}
+
+/** Font Size **/
+.font-size-small{
+    font-size: 14px;
+}
 
 /** Element size in page **/
 .f-10 {
@@ -105,7 +113,7 @@
    color: #333;
    margin-top: 11px;
    font-size: 24px;
-}
+} 
 .header1{
     font-size: 33px;
     font-weight: 400;
@@ -137,4 +145,60 @@
     font-size: 14px;
     color: #aaa;
     letter-spacing: 1px;
+}
+.prag-black {
+    color: #333;
+}
+
+/** Make Padding and Margin **/
+.padding-20{
+    padding: 20px;
+}
+.paddingBt-20{
+    padding-bottom: 20px;
+}
+.paddingTopBt-10{
+    padding: 10px 0;
+}
+.marginTop-25{
+    margin-top: 25px;
+}
+.marginBt-20{
+    margin-bottom: 20px;
+}
+
+/** Profile Picture **/
+.profile{
+    width: 70%;
+    margin: 0 auto;
+}
+.p-circle{
+    border-radius: 50%;
+}
+
+/** Horizontal Line **/
+.gray-rule{
+    background-color: rgb(216, 215, 215);
+    height: 1.05px;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+/** Social Media Logos  **/
+.l-logo-parent{
+    justify-content: space-between;
+}
+.l-logo-parent a{
+    display: inline;
+    margin-bottom: 10px;
+}
+.l-logo {
+    margin-top: 10px;
+}
+
+/** fixed link **/
+.fixed{
+    position: fixed;
+    z-index: 1000;
 }
