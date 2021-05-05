@@ -1,25 +1,40 @@
 // Tags
 var tagsElement = document.getElementsByClassName("tag");
-var tagResponseText="";
-var xhttp = new XMLHttpRequest();
 
-xhttp.open("GET", "Js/tagdates.txt", true);
-xhttp.onreadystatechange = function () {
-  if (xhttp.readyState == 4 && xhttp.status == 200) {
-    tagResponseText = xhttp.responseText.split(";");
-    for(i in tagsElement){
-        tagsElement[i].innerHTML = tagResponseText[i];
+function loadDoc(url,cFunction){
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange= function(){
+    if(xhttp.readyState==4 && xhttp.status==200){
+      cFunction(this.responseText);
     }
-  }
-};
-xhttp.send();
+  };
+  xhttp.open("GET",url,true);
+  xhttp.send();
+}
 
-var menu=document.getElementById("menu");
+loadDoc('js/tagdates.txt',showTagDates);
+function showTagDates(dates){
+  var datesSplit = dates.split(";");
+  for(i in tagsElement){
+         tagsElement[i].innerHTML = datesSplit[i];
+     }
+}
+
+
+
+
+
+// Show menu in Extra Small Mobile phones
+var menu = document.getElementById("menu"),
+  menuBar = document.getElementById("menuBar");
+  menuBar.addEventListener("click",showMenu,true);
 function showMenu(){
-  console.log("showMenu");
-  document.body.addEventListener("click",closeMenu,true);
-  menu.classList.add(".xsm-menu-show");
+  menuBar.removeEventListener("click",showMenu,true);
+  menu.classList.add("xsm-menu-show");
+  menuBar.addEventListener("click", closeMenu,true);
 }
 function closeMenu(){
+  menuBar.removeEventListener("click",closeMenu,true);
   menu.classList.remove("xsm-menu-show");
+  menuBar.addEventListener("click", showMenu,true);
 }

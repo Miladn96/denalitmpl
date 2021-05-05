@@ -536,10 +536,6 @@
         color: #aaa;
     }
 
-    .xsm:active {
-        display: none;
-    }
-
     .xsm-menu {
         display: none;
     }
